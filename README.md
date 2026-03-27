@@ -2,6 +2,9 @@
 
 Next.js + Tailwind + Supabase migration of the customer-facing portal originally built on Bubble.io.
 
+**GitHub Repository**: [https://github.com/amankumar2k24/Customer-Portal](https://github.com/amankumar2k24/Customer-Portal)  
+**Live Deployment**: [https://vcl-customer-portal.vercel.app/](https://vcl-customer-portal.vercel.app/)
+
 ## Project Setup
 
 ```bash
@@ -11,15 +14,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Environment Variables
-
-Create a `.env.local` file:
-
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key   # only needed for /api/sync-products
-OPENAI_API_KEY=your_openai_key                    # optional – AI recommendation falls back to mock
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
 ```
 
 ## Database Setup
@@ -37,8 +38,8 @@ supabase/seed.sql                             # 10 sample products
 
 | Field | Value |
 |---|---|
-| Email | `test@tcl-demo.com` |
-| Password | `TestTCL2025!` |
+| Email | `testuser@gmail.com` |
+| Password | `Test@123` |
 
 > Create this account via the `/signup` page — the auth trigger will auto-insert the user row.
 
