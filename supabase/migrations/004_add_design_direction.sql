@@ -1,0 +1,1 @@
+ALTER TABLE public.orders ADD COLUMN IF NOT EXISTS design_direction TEXT DEFAULT 'use_as_inspiration';

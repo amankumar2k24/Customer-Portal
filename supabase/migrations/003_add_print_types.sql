@@ -1,0 +1,3 @@
+ALTER TYPE print_type ADD VALUE IF NOT EXISTS 'dtf';
+ALTER TYPE print_type ADD VALUE IF NOT EXISTS 'dtg';
+ALTER TYPE print_type ADD VALUE IF NOT EXISTS 'chain_stitch';

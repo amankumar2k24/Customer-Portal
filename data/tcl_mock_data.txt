@@ -1,0 +1,42 @@
+==USERS==
+id,name,email,user_type,organization,school,loyalty_points
+USR001,Madison Clarke,madison.clarke@alphaphi.org,customer,Alpha Phi,University of Alabama,320
+USR002,Tyler Nguyen,tyler.nguyen@sigchi.org,customer,Sigma Chi,University of Georgia,85
+USR003,Brianna Walsh,brianna.walsh@kappakappa.org,customer,Kappa Kappa Gamma,Ohio State University,510
+USR004,Jordan Reed,jordan.reed@pikappalpha.org,customer,Pi Kappa Alpha,University of Tennessee,0
+USR005,Alexis Monroe,alexis.monroe@deltazeta.org,customer,Delta Zeta,Auburn University,210
+USR006,Chris Patel,chris.patel@tcl.com,account_manager,,TCL HQ,0
+USR007,Samantha Lee,samantha.lee@tcl.com,account_manager,,TCL HQ,0
+USR008,Jake Turner,jake.turner@uga.edu,campus_rep,TCL Campus Reps,University of Georgia,150
+USR009,Priya Sharma,priya.sharma@ua.edu,campus_rep,TCL Campus Reps,University of Alabama,90
+USR010,Noah Castillo,noah.castillo@osu.edu,campus_rep,TCL Campus Reps,Ohio State University,60
+
+==PRODUCTS==
+id,sku,name,category,turnaround_days,starting_price,is_featured,print_types_available
+PRD001,TEE-GILDAN-64000,Gildan Softstyle Tee,T-Shirts,10,8.50,true,"screen_print,puff_print,foil"
+PRD002,TEE-BELLA-3001,Bella+Canvas Unisex Tee,T-Shirts,10,11.00,true,"screen_print,dye_sublimation,foil"
+PRD003,CREW-INDEPENDENT-SS3000,Independent Trading Crewneck,Sweatshirts,12,22.00,true,"screen_print,embroidery,puff_print"
+PRD004,HOOD-GILDAN-18500,Gildan Heavy Blend Hoodie,Sweatshirts,12,24.00,true,"screen_print,embroidery,puff_print"
+PRD005,HAT-RICHARDSON-112,Richardson 112 Trucker Hat,Headwear,14,18.00,false,"embroidery,puff_print"
+PRD006,HAT-YUPOONG-6606,Yupoong Snapback,Headwear,14,16.00,false,"embroidery,screen_print"
+PRD007,POLO-PORT-K500,Port Authority Performance Polo,Polos,14,28.00,false,"embroidery,screen_print"
+PRD008,JACKET-CHARLES-J317,Charles River Pullover Jacket,Outerwear,18,45.00,false,"embroidery,screen_print"
+PRD009,TANK-NEXT-3633,Next Level Racerback Tank,T-Shirts,10,9.00,false,"screen_print,dye_sublimation"
+PRD010,CREW-COMFORT-1566,Comfort Colors Crewneck,Sweatshirts,12,26.00,true,"screen_print,embroidery"
+
+==ORDERS==
+id,customer,event_name,due_date,status,order_type,products_selected,print_type,front_design_description,back_design_description,front_design_file,back_design_file
+ORD001,USR001,Alpha Phi Bid Day 2025,2025-02-28,proof_ready,event,"PRD002,PRD009",screen_print,Alpha Phi letters with bid day sun motif coral and white,Back text: Bid Day 2025 University of Alabama,https://cdn.tcl.io/designs/ord001_front.ai,https://cdn.tcl.io/designs/ord001_back.ai
+ORD002,USR002,Sigma Chi Derby Days,2025-03-10,proof_pending,event,"PRD001",screen_print,Sigma Chi crest with Derby Days text in navy and gold,None,,
+ORD003,USR003,KKG Big Little Reveal,2025-02-20,approved,event,"PRD003,PRD004",embroidery,KKG logo embroidered on left chest in blue and gold,None,https://cdn.tcl.io/designs/ord003_front.ai,
+ORD004,USR004,Pike Formal 2025,2025-04-05,new,formal,"PRD008",embroidery,Pi Kappa Alpha shield on left chest,None,,
+
+==PROOFS==
+id,order,proof_number,product,color,print_type,est_ship_date,price_tiers,mockup_image_url,status,uploaded_at
+PRF001,ORD001,1,PRD002,Heather Peach,screen_print,2025-02-24,"12-23: $15.50 | 24+: $13.50",https://cdn.tcl.io/mockups/prf001.png,approved,2025-02-10T14:32:00Z
+PRF002,ORD001,1,PRD009,Coral,screen_print,2025-02-24,"12-23: $12.50 | 24+: $11.50",https://cdn.tcl.io/mockups/prf002.png,approved,2025-02-10T14:35:00Z
+PRF003,ORD002,1,PRD001,Navy,screen_print,2025-03-06,"12-23: $11.50 | 24+: $10.50",https://cdn.tcl.io/mockups/prf003.png,pending,2025-02-12T09:15:00Z
+
+==REVISION_REQUESTS==
+id,proof,customer,notes,created_at
+REV001,PRF003,USR002,The gold color on the crest looks more yellow than the PMS 124 we specified.,2025-02-13T08:55:00Z
