@@ -38,8 +38,8 @@ supabase/seed.sql                             # 10 sample products
 
 | Field | Value |
 |---|---|
-| Email | `testuser@gmail.com` |
-| Password | `Test@123` |
+| Email | `testuser3@gmail.com` |
+| Password | `Test@123123` |
 
 > Create this account via the `/signup` page — the auth trigger will auto-insert the user row.
 
