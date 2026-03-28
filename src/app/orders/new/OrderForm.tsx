@@ -217,7 +217,7 @@ export default function OrderForm({ initialProducts }: { initialProducts: Produc
 
   useEffect(() => {
 
-    const draftStr = localStorage.getItem('vcl_order_draft')
+    const draftStr = localStorage.getItem('tcl_order_draft')
     if (draftStr) {
       try {
         const draft = JSON.parse(draftStr)
@@ -326,7 +326,7 @@ export default function OrderForm({ initialProducts }: { initialProducts: Produc
       const draft = {
         customerName, eventName, dueDate, frontDesign, backDesign, printType, selectedProducts
       }
-      localStorage.setItem('vcl_order_draft', JSON.stringify(draft))
+      localStorage.setItem('tcl_order_draft', JSON.stringify(draft))
       toast.success('Draft saved locally! You can return to finalize it later.')
     } catch (error) {
       console.error(error)
@@ -1386,7 +1386,7 @@ export default function OrderForm({ initialProducts }: { initialProducts: Produc
                   <Box className="w-4 h-4 text-[#00A7FA]" />
                   Order Context
                 </div>
-                <div className="text-[22px] font-black text-neutral-900 mb-6 tracking-tight">#ORD-{submittedOrderId?.slice(0, 8).toUpperCase() || 'ABC-VCL-01'}</div>
+                <div className="text-[22px] font-black text-neutral-900 mb-6 tracking-tight">#ORD-{submittedOrderId?.slice(0, 8).toUpperCase() || 'ABC-TCL-01'}</div>
 
                 <div className="space-y-5">
                   <div className="flex justify-between border-b border-neutral-50 pb-3"><span className="text-neutral-400 font-bold text-[11px]">Type</span><span className="font-bold text-neutral-900 text-[13px] capitalize">{orderType.replace(/_/g, ' ')}</span></div>
@@ -1401,7 +1401,7 @@ export default function OrderForm({ initialProducts }: { initialProducts: Produc
                   Ship To
                 </div>
                 <div className="text-[13px] text-neutral-600 leading-relaxed font-bold">
-                  <div className="text-neutral-900">{customerName || 'VCL Client'}</div>
+                  <div className="text-neutral-900">{customerName || 'TCL Client'}</div>
                   <div>123 Fashion Ave, Suite 400</div>
                   <div>Los Angeles, CA 90015</div>
                 </div>

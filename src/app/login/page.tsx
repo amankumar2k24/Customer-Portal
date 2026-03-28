@@ -47,7 +47,7 @@ export default function LoginPage(props: { searchParams: Promise<{ error?: strin
         <div className="mb-12">
           <div className="flex gap-2">
             <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-[#f97316]">
-              <span className="text-white font-black text-[15px] leading-none">V</span>
+              <span className="text-white font-black text-[15px] leading-none">T</span>
             </div>
             <div className="w-9 h-9 rounded-lg flex items-center justify-center bg-[#ec4899]">
               <span className="text-white font-black text-[15px] leading-none">C</span>
@@ -59,7 +59,7 @@ export default function LoginPage(props: { searchParams: Promise<{ error?: strin
         </div>
 
         <h1 className="text-[28px] font-bold text-white mb-1 leading-tight">Welcome back</h1>
-        <p className="text-neutral-500 text-sm mb-8">Sign in to your VCL account</p>
+        <p className="text-neutral-500 text-sm mb-8">Sign in to your TCL account</p>
 
         {error && (
           <div className="mb-6 p-3.5 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm font-medium text-center animate-in fade-in zoom-in duration-300">
@@ -152,7 +152,7 @@ export default function LoginPage(props: { searchParams: Promise<{ error?: strin
 
         <div className="absolute inset-0 flex items-center justify-center gap-12 z-20">
           <div className="w-44 h-44 rounded-[3rem] bg-white/10 backdrop-blur-2xl border border-white/20 flex items-center justify-center shadow-2xl transform -rotate-12 transition-all hover:rotate-0 hover:scale-110 duration-500 group">
-            <span className="text-7xl font-black text-white/90 drop-shadow-2xl">V</span>
+            <span className="text-7xl font-black text-white/90 drop-shadow-2xl">T</span>
             <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-br from-white/20 to-transparent opacity-50" />
           </div>
           <div className="w-44 h-44 rounded-[3rem] bg-white/10 backdrop-blur-2xl border border-white/20 flex items-center justify-center shadow-2xl transform rotate-3 transition-all hover:rotate-0 hover:scale-110 duration-500 mt-20 relative">

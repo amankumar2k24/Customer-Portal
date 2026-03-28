@@ -97,7 +97,7 @@ export default async function ProofsPage(props: { params: Promise<{ id: string }
                     </div>
                   </div>
                   <div>
-                    <div className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">Product ID: {p.id?.slice(0,8).toUpperCase() || 'VCL-PROD'}</div>
+                    <div className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1">Product ID: {p.id?.slice(0,8).toUpperCase() || 'TCL-PROD'}</div>
                     <div className="text-lg font-black text-neutral-900">Awaiting Artwork Proof</div>
                     <div className="mt-4 flex items-center gap-3">
                        <div className="w-8 h-8 rounded-full border-2 border-white shadow-sm" style={{ backgroundColor: p.color || '#000' }} />

@@ -64,7 +64,7 @@ export default function Sidebar({ onClose }: { onClose?: () => void }) {
           href="/dashboard" 
           className="flex items-start gap-4 mb-1 hover:opacity-80 transition-opacity group/logo"
         >
-          <div className="text-[28px] font-black text-[#00A7FA] leading-none mt-1 group-hover/logo:scale-105 transition-transform">VCL</div>
+          <div className="text-[28px] font-black text-[#00A7FA] leading-none mt-1 group-hover/logo:scale-105 transition-transform">TCL</div>
           <div className="text-[17px] font-bold text-white leading-tight mt-2">
             {isOrderFlow ? 'Customer Order Flow' : 'Customer Portal'}
           </div>

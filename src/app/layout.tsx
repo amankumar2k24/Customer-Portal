@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VCL | Customer Portal",
+  title: "TCL | Customer Portal",
   description: "Modern customer portal for order management",
 };
 

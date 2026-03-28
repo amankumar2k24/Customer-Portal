@@ -88,7 +88,7 @@ export default function OrderForm({ initialProducts }: { initialProducts: Produc
 
   useEffect(() => {
     
-    const draftStr = localStorage.getItem('vcl_order_draft')
+    const draftStr = localStorage.getItem('tcl_order_draft')
     if (draftStr) {
       try {
         const draft = JSON.parse(draftStr)
@@ -148,7 +148,7 @@ export default function OrderForm({ initialProducts }: { initialProducts: Produc
       const draft = {
         customerName, eventName, dueDate, frontDesign, backDesign, printType, selectedProducts
       }
-      localStorage.setItem('vcl_order_draft', JSON.stringify(draft))
+      localStorage.setItem('tcl_order_draft', JSON.stringify(draft))
       toast.success('Draft saved locally! You can return to finalize it later.')
     } catch (error) {
       console.error(error)

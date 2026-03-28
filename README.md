@@ -3,7 +3,7 @@
 Next.js + Tailwind + Supabase migration of the customer-facing portal originally built on Bubble.io.
 
 **GitHub Repository**: [https://github.com/amankumar2k24/Customer-Portal](https://github.com/amankumar2k24/Customer-Portal)  
-**Live Deployment**: [https://vcl-customer-portal.vercel.app/](https://vcl-customer-portal.vercel.app/)
+**Live Deployment**: [https://tcl-customer-portal.vercel.app/](https://tcl-customer-portal.vercel.app/)
 
 ## Project Setup
 

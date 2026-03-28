@@ -150,7 +150,7 @@ export default async function OrderDetailsPage(props: { params: Promise<{ id: st
                       </div>
                       <div className="flex-1 min-w-0">
                          <div className="text-[10px] font-black text-primary uppercase tracking-widest mb-1 truncate">ID: {p.id?.slice(0,8).toUpperCase()}</div>
-                         <div className="text-sm font-bold text-neutral-900 truncate">VCL Custom Item</div>
+                         <div className="text-sm font-bold text-neutral-900 truncate">TCL Custom Item</div>
                          <div className="mt-2 flex items-center gap-2">
                             <div className="w-3 h-3 rounded-full border border-neutral-200" style={{ backgroundColor: p.color || '#000' }} />
                             <span className="text-[10px] font-bold text-neutral-400 uppercase">{p.color_name || 'Selected'}</span>

@@ -48,7 +48,7 @@ export default function TopHeader({ onMenuClick }: { onMenuClick?: () => void })
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
         </button>
-        <span className="text-xl font-black tracking-tight text-[#00A7FA]">VCL</span>
+        <span className="text-xl font-black tracking-tight text-[#00A7FA]">TCL</span>
       </div>
 
       <div className="flex items-center gap-3">
